@@ -1,0 +1,219 @@
+/*Обнуление*/
+*{
+padding: 0;
+margin: 0;
+border: 0;
+}
+*,*:before,*:after{
+-moz-box-sizing: border-box;
+-webkit-box-sizing: border-box;
+box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+height: 100%;
+width: 100%;
+font-size: 100%;
+line-height: 1;
+font-size: 14px;
+-ms-text-size-adjust: 100%;
+-moz-text-size-adjust: 100%;
+-webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+/*--------------------*/
+
+
+.h1coffeya {
+background: #E4E5D2;
+padding:25px;
+margin-bottom: 20px;
+position: relative;left:10px;top: 10px;
+box-shadow: 5px 10px 5px 4px #000;
+
+
+font-family: 'Open Sans', sans-serif;
+
+color: #5C2610;
+font-size: 3em;
+font-weight: normal;
+display: inline-block;
+border-radius: 50%/40%;
+border: 6px solid #5C2610;
+border-left-color: transparent;
+border-right-color: transparent;
+}
+
+/* navigation */
+
+.buttons{
+display: inline-flex;
+justify-content: flex-center;
+
+position: relative;
+width: 70%;
+left: 300px;
+top: 10px;
+font-size: 17px;
+padding: 62px;
+z-index: 1;
+}
+
+.instagram{
+font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
+display: inline-block;
+
+vertical-align: top;
+color: #808080;
+text-decoration: none;
+position: relative;
+left: 5%;
+top: 35%;
+font-size:inherit;
+white-space: nowrap;
+transition: color .2s linear;
+
+
+}
+.instagram p{
+
+display: block;
+block-size:30px;
+inline-size:120px;
+background: url(../image/svg/instagram.svg) left top no-repeat;
+background-size: 17px;
+padding: 0 0 0 25px;
+z-index: 1;
+}
+
+.instagram:hover {
+color: #e96656;
+}
+.Menu{
+font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
+display: inline-block;
+vertical-align: top;
+color: #808080;
+text-decoration: none;
+position: relative;
+left: 5%;
+top: 35%;
+font-size:inherit;
+white-space: nowrap;
+transition: color .2s linear;
+
+
+}
+.Menu p{
+
+display: block;
+block-size:30px;
+background: url(../image/svg/spoon-knife.svg) left top no-repeat;
+background-size: 17px;
+padding: 0 0 0 25px;
+z-index: 1;
+}
+
+.Menu:hover {
+color: #e96656;
+}
+.YandexMaps{
+font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
+display: inline-block;
+vertical-align: top;
+color: #808080;
+text-decoration: none;
+position: relative;
+left: 7%;
+top: 35%;
+font-size:inherit;
+white-space: nowrap;
+transition: color .2s linear;
+
+
+}
+.YandexMaps p{
+
+display: block;
+block-size:30px;
+background: url(../image/svg/location2.svg) left top no-repeat;
+background-size: 17px;
+padding: 0 0 0 25px;
+z-index: 1;
+}
+
+.YandexMaps:hover {
+color: #e96656;
+}
+.GoogleMaps{
+font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
+display: inline-block;
+vertical-align: top;
+color: #808080;
+text-decoration: none;
+position: relative;
+left: 9%;
+top: 35%;
+font-size:inherit;
+white-space: nowrap;
+transition: color .2s linear;
+
+
+}
+.GoogleMaps p{
+
+display: block;
+block-size:30px;
+background: url(../image/svg/map.svg) left top no-repeat;
+background-size: 17px;
+padding: 0 0 0 25px;
+z-index: 1;
+}
+
+.GoogleMaps:hover {
+color: #e96656;
+}
+.PhoneNumber{
+font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
+display: inline-block;
+vertical-align: top;
+color: #808080;
+text-decoration: none;
+position: relative;
+left: 11%;
+top: 35%;
+font-size:inherit;
+white-space: nowrap;
+transition: color .2s linear;
+
+
+}
+.PhoneNumber p{
+
+display: block;
+block-size:30px;
+background: url(../image/svg/phone.svg) left top no-repeat;
+background-size: 17px;
+padding: 0 0 0 25px;
+z-index: 1;
+}
+
+.PhoneNumber:hover {
+color: #e96656;
+}
+
+
