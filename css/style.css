@@ -22,9 +22,9 @@ line-height: 1;
 font-size: 14px;
 -ms-text-size-adjust: 100%;
 -moz-text-size-adjust: 100%;
--webkit-text-size-adjust: 100%;
+-webkit-text-size-adjust: 100%; }
+input,button,textarea{font-family:inherit;
 }
-input,button,textarea{font-family:inherit;}
 
 input::-ms-clear{display: none;}
 button{cursor: pointer;}
@@ -33,71 +33,224 @@ a, a:visited{text-decoration: none;}
 a:hover{text-decoration: none;}
 ul li{list-style: none;}
 img{vertical-align: top;}
-
-h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 /*--------------------*/
 
-
-.h1coffeya {
-background: #E4E5D2;
-padding:25px;
-margin-bottom: 20px;
-position: relative;left:10px;top: 10px;
-box-shadow: 5px 10px 5px 4px #000;
-
-
-font-family: 'Open Sans', sans-serif;
-
-color: #5C2610;
-font-size: 3em;
-font-weight: normal;
-display: inline-block;
-border-radius: 50%/40%;
-border: 6px solid #5C2610;
-border-left-color: transparent;
-border-right-color: transparent;
-}
-
 /* navigation */
-
-.buttons{
-display: inline-flex;
-justify-content: flex-center;
-
-position: relative;
-width: 70%;
-left: 300px;
-top: 10px;
-font-size: 17px;
-padding: 62px;
-z-index: 1;
+body{
+	word-wrap:break-word ;
 }
+
+.headersticky{
+position: fixed;
+background-color: #fff;
+	width: 100%;
+	height: 180px;
+	top: 0;
+	left: 0;
+	z-index: 2;
+}
+.headersticky:before{
+content: "";
+position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	
+}
+.container{
+	max-width: 1180px;
+	margin-left:auto;
+	margin-right: auto;
+	padding: 0px 15px 0px 15px;
+	padding: 0 10px;
+}
+.header_body{
+position: relative;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+.header_logo {
+	width: 150px;
+	height: 150px;
+	margin: 15px 5px 0 105px;
+	padding: 5px;
+	
+	position: relative;
+	display: flex;
+	justify-content: center;
+	z-index: 3;
+}
+.header_logo img{
+	display: block;
+	position: relative;
+border-radius: 50%;
+}
+.header_burger{
+	display:none;
+}
+
+.header_list{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-transform: uppercase;
+	margin: 0px 1% 0px 1%;
+	width: 80%;
+	height: 170px;
+	position: relative;
+	z-index: 4;
+
+}
+.header_list li{
+	align-items: center;
+list-style: none;
+margin: 0px 0px 0px 50px;
+font-size: 19px;
+z-index: 4;
+}
+.header_menu{
+	display: flex;
+}
+@media screen and (max-width: 1160px) and (min-width:845px){
+		.header_body{
+		height: 185px;
+	}
+	.header_menu{
+		display: flex;
+		justify-content: flex-start;
+		flex-direction: column;
+		align-items: center;
+	}
+	.header_logo{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin: 0px auto;
+		width: 150px;
+		height: 145px
+}
+	.header_logo img{
+	height: 130px;
+	}
+	.header_list {
+	display: flex;
+	justify-content: center;
+		height: 50px;
+	width: 100%;
+}
+.header_list li{
+	font-size: 19px;
+	align-self:center;
+}
+.layer1{
+	margin: 15% 0px 0px 0px;
+}
+}
+
+@media screen and (max-width: 845px){
+	.headersticky{
+		position: fixed;
+		background-color: #fff;
+		height: 155px;
+	}
+	.header_body{
+	height: 165px;
+	width: 85%;
+	justify-content: end;
+	align-items: center;
+	}
+	.header_logo{
+		top: 0;
+		left: 0;
+		margin: 10px 0px 0px 0px;
+		padding: 0;
+		max-width: 100%;
+		max-height: 100%;
+	}
+	.header_logo img{
+		width: 80%;
+		height: 80%;
+		margin: 10% 0px 0px 0px;
+	}
+	.header_list {
+	display: none;
+	}
+	.header_burger{
+	display: block;
+	position: relative;
+	top: 0;
+	left: 30px;
+		width: 40px;
+		height: 20px;
+	z-index: 3;
+}
+	.header_burger span{
+	position: absolute;
+	background-color:red;
+		width: 40px;
+		height: 3px;
+		top: 9px;
+		left: 0;
+		}
+	.header_burger:before,
+	.header_burger:after{
+		content: "";
+		background-color:red;
+		position: absolute;
+		width: 40px;
+		height: 4px;
+		left: 0;
+	}
+
+	.header_burger:before{
+		top: 0px;
+	}
+	.header_burger:after{
+		bottom: 0;
+	}
+	.container{
+
+	}
+	.header_menu{
+	position: fixed;
+	top: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+}
+	}
+	.header_menu{
+	position: fixed;
+	top: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+
+}
+
 
 .instagram{
 font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
 display: inline-block;
-
-vertical-align: top;
-color: #808080;
-text-decoration: none;
 position: relative;
-left: 5%;
+left: 0;
 top: 35%;
-font-size:inherit;
+
 white-space: nowrap;
 transition: color .2s linear;
-
+color: #808080;
 
 }
-.instagram p{
+.instagram li{
 
 display: block;
 block-size:30px;
-inline-size:120px;
+inline-size:140px;
 background: url(../image/svg/instagram.svg) left top no-repeat;
 background-size: 17px;
 padding: 0 0 0 25px;
-z-index: 1;
 }
 
 .instagram:hover {
@@ -106,22 +259,20 @@ color: #e96656;
 .Menu{
 font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
 display: inline-block;
-vertical-align: top;
-color: #808080;
-text-decoration: none;
 position: relative;
-left: 5%;
+left: 0%;
 top: 35%;
-font-size:inherit;
+
 white-space: nowrap;
 transition: color .2s linear;
-
+color: #808080;
 
 }
-.Menu p{
+.Menu li{
 
 display: block;
 block-size:30px;
+inline-size:100px;
 background: url(../image/svg/spoon-knife.svg) left top no-repeat;
 background-size: 17px;
 padding: 0 0 0 25px;
@@ -134,22 +285,20 @@ color: #e96656;
 .YandexMaps{
 font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
 display: inline-block;
-vertical-align: top;
-color: #808080;
-text-decoration: none;
 position: relative;
-left: 7%;
+left: 0;
 top: 35%;
-font-size:inherit;
 white-space: nowrap;
 transition: color .2s linear;
+color: #808080;
 
 
 }
-.YandexMaps p{
+.YandexMaps li{
 
 display: block;
 block-size:30px;
+inline-size:150px;
 background: url(../image/svg/location2.svg) left top no-repeat;
 background-size: 17px;
 padding: 0 0 0 25px;
@@ -162,22 +311,19 @@ color: #e96656;
 .GoogleMaps{
 font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
 display: inline-block;
-vertical-align: top;
-color: #808080;
-text-decoration: none;
 position: relative;
-left: 9%;
+left: 0;
 top: 35%;
-font-size:inherit;
 white-space: nowrap;
 transition: color .2s linear;
-
+color: #808080;
 
 }
-.GoogleMaps p{
+.GoogleMaps li{
 
 display: block;
 block-size:30px;
+inline-size:150px;
 background: url(../image/svg/map.svg) left top no-repeat;
 background-size: 17px;
 padding: 0 0 0 25px;
@@ -190,16 +336,14 @@ color: #e96656;
 .PhoneNumber{
 font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
 display: inline-block;
-vertical-align: top;
-color: #808080;
-text-decoration: none;
 position: relative;
-left: 11%;
-top: 35%;
-font-size:inherit;
+left: 0;
+top:
+35%;
+
 white-space: nowrap;
 transition: color .2s linear;
-
+color: #808080;
 
 }
 .PhoneNumber p{
@@ -216,4 +360,97 @@ z-index: 1;
 color: #e96656;
 }
 
+.layer1{
+background: url(../image/header.jpg);
+background-repeat: no-repeat;
+background-size: 100% auto;
+margin: 165px 0px 0px 0px;
+padding: 10px 0px 0px 0px;
+background-position: center auto;
+max-width: 100%;
+height: 180%;
+width: 100%;
+
+}
+.flexconteiner {
+height: 100%;
+width: 100%;
+z-index: 1;
+padding: 10px 0px 0px 0px;
+
+}
+.textPhoto{
+	padding: 128px 200px 210px;
+color: #fff;
+z-index: 1;
+}
+.textPhoto h1{
+width: 100%;
+height: 40%;
+
+font-size: 8vh;
+font-family: 'Montserrat', Helvetica, sans-serif;
+text-align: center;	
+text-transform: uppercase;
+}
+.buttonslayer{
+position: relative;
+left: 30%;
+
+margin: 200px 0px 0px 0px;
+width: 42%;
+height: 10%;
+padding: 0px 200px 0px 200px;
+z-index: 1;
+}
+.but1 {
+	position: relative;
+	bottom: 0;
+text-transform: uppercase;
+background-color: red;
+font-size: 1vw;
+margin:0px 20px 0px 20px;
+padding: 10px;
+
+
+
+border-radius: 4px;
+transition: color .2s linear;
+height: 50px;
+}
+.but1: hover {
+background-color: #000;
+}
+.but1 p{
+color: #fff;
+}
+
+.but2{
+
+right: 41%;
+bottom: 18%;
+text-transform: uppercase;
+background-color: green;
+font-size: 1vw;
+padding: 15px;
+margin-left: 20px;
+color: #fff;
+border-radius: 4px;
+}
+.but2:hover{
+
+}
+.containercoffe {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+height: 150px;
+padding-top: 100px;
+}
+.content{
+
+}
+.headcoffe {}
+.underheadcoffe {}
 
